@@ -18,4 +18,27 @@ defmodule Sample.Calendar do
     end
   end
 
+  def day_abbreviation2(day) do
+    case day do
+      :Monday -> "M"
+      :Tuesday -> "Tu"
+      :Wednesday -> "W"
+      :Thrusday -> "Th"
+      :Friday -> "F"
+      :Saturday -> "Sa"
+      :Sunday -> "Su"
+      _ -> "Invalid day"
+    end
+  end
+
+  def describe_date(date) do
+    case date do
+      {1, 10, _} -> "Happy Birthday"
+      {1, _, _} -> "Brand new month!"
+      {25, 12, _} -> "Merry Christmas"
+      {_, month, _} when month <= 12 -> "Just an average day"
+      {_, _, _} -> "Invalid month"
+    end
+  end
+
 end
