@@ -10,7 +10,6 @@ defmodule Tweet.Application do
     children = [
       # Starts a worker by calling: Tweet.Worker.start_link(arg)
       # {Tweet.Worker, arg},
-      worker(Tweet.Scheduler, [])
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

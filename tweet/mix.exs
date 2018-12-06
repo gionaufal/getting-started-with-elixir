@@ -23,7 +23,7 @@ defmodule Tweet.MixProject do
   defp deps do
     [
       {:credo, "~> 1.0.0", only: [:dev, :test], runtime: false},
-      {:quantum, "~> 2.3"},
+      {:quantum, "~> 1.8"},
       {:timex, "~> 3.0"}
     ]
   end
